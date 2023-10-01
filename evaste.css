@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Merriweather&family=Montserrat&family=Ysabeau+Infant:ital,wght@1,300&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.wrapper {
+position: absolute;
+bottom: 10px;
+left: 20px;
+background: lightgray;
+max-width: 345px;
+border-radius: 15px;
+text-align: center;
+padding: 20px 20px 25px 20px
+}
+
+.wrapper.hide {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.wrapper .content {
+    margin-top: 10px;
+}
+
+.content header {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.content p {
+    color: darkolivegreen
+}
+
+.content .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons .item {
+    margin: 0 10px;
+}
+
+.buttons button {
+    padding: 5px 10px;
+    background-color: darkolivegreen;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.buttons a {
+    color: darkolivegreen;
+}
+
+.container5 h1 {
+    margin: 20px 30px;
+    color: darkolivegreen;
+}
+
+.container5 p {
+    color: darkolivegreen;
+    font-size: 20px;
+    margin: 20px 20px;
+}

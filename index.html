@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="etusivu.css">
+ <link rel="stylesheet" href="evaste.css">
+    <title>Meidän Puutarha</title>
+   
+    <title><Audio></Audio></title>
+</head>
+<body>
+    <audio controls src="Audio/birds.mp3" type="Audio/mpeg">
+
+    </audio>
+    <div class="tausta">
+
+        <div class="Puutarhaan">
+            <h2>Tervetuloa meidän</h2>
+            <h1>PUUTARHAAN</h1>
+            <a href="puutarhassa.html">
+            <button type="button">Käy sisään!</button>
+</a>
+        </div>
+    </div>
+        <div class="bubbels">
+            <img src="Images/bubble.png">
+            <img src="Images/bubble.png">
+            <img src="Images/bubble.png">
+            <img src="Images/bubble.png">
+            <img src="Images/bubble.png">
+            <img src="Images/bubble.png">
+            <img src="Images/bubble.png">
+            <img src="Images/bubble.png">
+        </div>
+        </div>
+        <div class="wrapper">
+            <div class="content">
+                <header>Tietosuojakäytäntömme</header>
+                <p>Sivustomme käyttää evästeitä. OK-nappia painamalla hyväksyt evästeiden käytön. Lisätietoja saat lue lisää-linkistä.</p>
+           
+            <div class="buttons">
+                <button class="item">OK</button>
+                <a href="#" class="item"><a href="luelisaa.html">Lue lisää</a></a>
+            </div>
+        </div>
+        </div>
+        <script>
+            const cookieBox = document.querySelector(".wrapper"),
+            acceptBtn = cookieBox.querySelector(".buttons button");
+
+            acceptBtn.onclick = ()=> {
+            document.cookie = "CookieBy=CodingNepal; max-age="+60*60*24*30;
+            if(document.cookie) {
+                cookieBox.classList.add("hide");
+            }else{
+                alert("Evästettä ei voi käyttää!");
+            }
+            }
+            //let checkCookie = document.cookie.indexOf("CookieBy=CodingNepal");
+            //checkCookie != -1 ? cookieBox.classList.add("hide"): cookieBox.classList.remove("hide");
+        </script>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
+</html>

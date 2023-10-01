@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+h1,
+h2 {
+    color: magenta;
+}
+
+.tausta {
+width: 100%;
+height: 100vh;
+background-image: url(Images/pihaa.png);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+position: relative;
+overflow: hidden;
+border: 2px solid white;
+border-radius: 50px;
+padding: 1rem 2rem;
+width: 100%;
+}
+
+.tausta img {
+    max-width: 1100px;
+    background-size: cover;
+}
+
+
+button {
+    font-size: 18px;
+    color: magenta;
+    font-weight: 800;
+    background-color: transparent;
+    border: 3px solid magenta;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+    padding: 10px;
+    margin-left: 15%;
+}
+
+.Puutarhaan {
+    max-width: 900px;
+    overflow: auto;
+    color: #fbfdfb;
+    position: absolute;
+    top: 45%;
+    left: 40%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+h1 {
+    font-size: 30px;
+    line-height: 80px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+.bubbels img{
+    width: 50px;
+    animation: bubble 7s linear infinite;
+}
+
+.bubbels {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom: -70px;
+}
+
+@keyframes bubble {
+    0%{
+        transform: translateY(0);
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    70%{
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-80vh);
+        opacity: 0;
+    }
+
+}
+
+.bubbels img:nth-child(1) {
+    animation-delay: 1s;
+    width: 100px;
+}
+.bubbels img:nth-child(2) {
+    animation-delay: 0.3s;
+    width: 160px;
+}
+.bubbels img:nth-child(3) {
+    animation-delay: 2.5s;
+    width: 95px;
+}
+.bubbels img:nth-child(4) {
+    animation-delay: 2.5s;
+    width: 110px;
+}
+.bubbels img:nth-child(5) {
+    animation-delay: 0.25s;
+    width: 170px;
+}
+.bubbels img:nth-child(6) {
+    animation-delay: 1s;
+    width: 85px;
+}
+.bubbels img:nth-child(7) {
+    animation-delay: 2s;
+    width: 130px;
+}
+.bubbels img:nth-child(8) {
+    animation-delay: 2.5s;
+    width: 105px;
+}
